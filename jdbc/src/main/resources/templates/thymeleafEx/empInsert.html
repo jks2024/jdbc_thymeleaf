@@ -5,7 +5,8 @@
   <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body class="container">
-  <h1>New Employee</h1>
+  <div class="form-container">
+    <h1>New Employee</h1>
     <form th:action="@{/emp/insert}" th:object="${employees}" method="post">
       <div>
         <label for="empNO">Employee Number:</label>
@@ -43,5 +44,6 @@
         <button type="submit">Save</button>
       </div>
     </form>
+  </div>
 </body>
 </html>
